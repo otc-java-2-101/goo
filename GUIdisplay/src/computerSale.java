@@ -1,8 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+Ch 14 GUI Informational Display 
+robert oleary
+cis 171
+*/
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,14 +10,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author nightblade
- */
 public class computerSale extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
+//        call the fxml doc where all the action is
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
@@ -26,9 +23,6 @@ public class computerSale extends Application {
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         launch(args);
     }
